@@ -1,0 +1,130 @@
+/* styles/Home.module.css */
+
+.mainContainer {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filterToggle {
+    background-color: #6b7280;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .filterToggle:hover {
+    background-color: #4b5563;
+  }
+  
+  .filterText {
+    margin-right: 1rem;
+  }
+  
+  .filterIcon {
+    font-size: 1.5rem;
+  }
+  
+  .propertySection {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .propertyGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 2rem; /* Gap between cards */
+    justify-items: center; /* Center items horizontally within each column */
+  }
+  
+  .propertyGrid .card {
+    flex: 0 0 calc(33.33% - 2rem); /* 33.33% width minus margin */
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+  }
+  
+  .propertyGrid .card:hover,
+  .propertyGrid .card:focus,
+  .propertyGrid .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  @media (max-width: 1024px) {
+    .propertyGrid .card {
+      flex: 0 0 calc(50% - 2rem); /* Two columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .propertyGrid .card {
+      flex: 0 0 calc(100% - 2rem); /* Full width on small screens */
+    }
+  }
+
+  /* styles/Home.module.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4b5563; /* Change this to your desired color */
+    border-bottom-left-radius: 15px; /* Curved bottom left corner */
+    border-bottom-right-radius: 15px; /* Curved bottom right corner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .youtubeLink {
+    margin-right: 1rem;
+  }
+  
+  .youtubeIcon {
+    font-size: 2rem; /* Increase the size of the YouTube icon */
+    color: #ff0000; /* YouTube red color */
+  }
+  
+  .navbarTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .navItems {
+    margin-left: auto; /* Push the nav items to the right */
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLink {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .navLink:hover {
+    text-decoration: underline;
+  }
+  
+  
+
